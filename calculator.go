@@ -11,6 +11,14 @@ type MyNum struct {
 	n float64
 }
 
+// GetNumFromBin converts string Bin to MyNum
+func GetNumFromBin(s string) *MyNum {
+	retval := new(MyNum)
+	anInt64, _ := strconv.ParseInt(s, 2, 64)
+	retval.n = float64(anInt64)
+	return retval
+}
+
 // GetNumFromOct converts string Oct to MyNum
 func GetNumFromOct(s string) *MyNum {
 	retval := new(MyNum)

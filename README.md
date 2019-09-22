@@ -1,7 +1,7 @@
 # 560GoCalc
 
 ## Testing
-You'll need to have go installed, and perhaps the coverage plugin, which can be install with
+You'll need to have go installed, and perhaps the coverage plugin, which can be installed with
 
 `go get golang.org/x/tools/cmd/cover`
 
@@ -13,6 +13,7 @@ Test the code by running . . .
 
 The *calculator* package has it's own object, *MyNum*, and supports 3 creation functions, and 6 operations as follows.
 
+- GetNumFromBin(string), takes a binary string and returns a MyNum.
 - GetNumFromHex(string), takes a hex string and returns a MyNum.
 - GetNumFromOct(string), takes an oct string and returns a MyNum.
 - GetNumFromInt(int), takes an integer and returns a MyNum.

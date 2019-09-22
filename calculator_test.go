@@ -5,7 +5,11 @@ import (
 )
 
 func TestConv(t *testing.T) {
-	a := GetNumFromHex("0A")
+	a := GetNumFromBin("101011")
+	if a.n != 43 {
+		t.Errorf("Binary 101011 should be 43, but we have %f\n", a.n)
+	}
+	a = GetNumFromHex("0A")
 	if a.n != 10 {
 		t.Errorf("Hex 0A should be 10, but we have %f\n", a.n)
 	}
